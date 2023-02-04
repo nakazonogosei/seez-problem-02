@@ -1,7 +1,7 @@
-## 会社名
+## SEEZ課題02
 
 ## version
-- Node 16.13.2
+- Node 18.13.0
 
 ## Install
 ```
@@ -21,4 +21,8 @@ $ npm run dev
 ## Production build
 ```
 $ npm run prod
+```
+## 詳細
+```
+fetch, 非同期処理, promise, async-await など...
 ```
