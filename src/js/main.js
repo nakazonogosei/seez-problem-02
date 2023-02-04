@@ -16,7 +16,7 @@ fetch("sample.json")
     console.log(error);
   });
 
-// STEP3
+// STEP3 ボタンを押して birthdayList1 に出力
 async function fetchJsons1(urls) {
   try {
     const fetchUrls = urls.map(url => fetch(url).then(response => response.json()));
@@ -37,7 +37,7 @@ birthdayButton.addEventListener("click", function() {
   fetchJsons1(jsonUrls);
 });
 
-// STEP4
+// STEP4 ページ読み込み後、 birthdayList2 に出力
 async function fetchJsons2(urls) {
   try {
     const fetchUrls = urls.map(url => fetch(url).then(response => response.json()));
