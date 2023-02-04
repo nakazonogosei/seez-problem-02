@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "prettier"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2020": true,
+    "jquery": true
+  },
+  "plugins": [
+    "ejs"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "globals": {},
+  "rules": {
+    "comma-dangle": ["error", "never"],
+    "no-console": "off",
+    "space-before-blocks": [
+      "warn", {
+        "keywords": "always",
+        "functions": "always",
+        "classes": "always"
+      }
+    ]
+  }
+}

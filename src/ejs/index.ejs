@@ -1,0 +1,34 @@
+<% const pageInfo = {
+  url: "/"
+};
+-%>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./include/_head', {meta:pageInfo}); -%>
+<body class="p-birthday">
+  <main class="main">
+
+    <div class="p-birthday__inner">
+      <h1 class="p-birthday__title">
+        <span class="p-birthday__tag">必見<span class="_upright">!!</span></span>
+        <span class="p-birthday__title-container">その辺にいる人の<br>誕生日一覧</span>
+      </h1>
+
+      <!-- STEP3 -->
+      <section class="p-birthday__step">
+        <h2 class="p-birthday__step-title">STEP3<span>ボタンをクリックして誕生日一覧を表示</span></h2>
+        <button id="birthdayButton" class="p-birthday__button">誕生日一覧を見る</button>
+        <ul id="birthday1" class="p-birthday__list"></ul>
+      </section>
+
+      <!-- STEP4 -->
+      <section class="p-birthday__step">
+        <h2 class="p-birthday__step-title">STEP4<span>ページを立ち上げた際に生成</span></h2>
+        <ul id="birthday2" class="p-birthday__list"></ul>
+      </section>
+    </div>
+
+  </main>
+  <script defer src="/assets/js/bundle.js"></script>
+</body>
+</html>

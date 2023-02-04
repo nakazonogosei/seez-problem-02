@@ -1,0 +1,75 @@
+@use "../global" as *;
+
+.p-birthday {
+  background-color: rgb(241, 241, 241);
+  height: 100%;
+  min-height: 100vh;
+  line-height: 1.2;
+  &__inner {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 60px 50px;
+  }
+  &__tag {
+    display: inline-block;
+    font-size: 3rem;
+    background-color: rgb(192, 3, 3);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    ._upright {
+      text-combine-upright: all;
+    }
+  }
+  &__title {
+    display: flex;
+    font-size: 3rem;
+    color: #000;
+  }
+  &__title-container {
+    margin-left: 40px;
+    text-align: center;
+    line-height: 2;
+  }
+  &__step {
+    margin-top: 60px;
+  }
+  &__step-title {
+    font-size: 3rem;
+    padding: 6px 0 10px;
+    color: #000;
+    text-align: center;
+    background-color: #d3fcff;
+    span {
+      display: block;
+      font-size: 2rem;
+      margin-top: 4px;
+      color: gray;
+    }
+  }
+  &__button {
+    display: block;
+    width: 300px;
+    margin: 40px auto 0;
+    font-size: 3rem;
+    background-color: blue;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    padding: 8px 0 12px;
+    transition: .3s opacity;
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &__list {
+    margin-top: 60px;
+    li {
+      & + & {
+        margin-top: 4px;
+      }
+    }
+  }
+}

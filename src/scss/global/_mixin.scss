@@ -1,0 +1,35 @@
+@mixin pc {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (max-width: 1280px) and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tab-narrow {
+  @media screen and (max-width: 1024px) and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin placeholders {
+  &:placeholder-shown {
+    color: #ccc;
+  }
+  &::-webkit-input-placeholder {
+    color: #ccc;
+  }
+  &:-ms-input-placeholder {
+    color: #ccc;
+  }
+}

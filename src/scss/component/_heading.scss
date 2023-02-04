@@ -1,0 +1,17 @@
+@use "../global" as *;
+
+.c-heading {
+  color: $color-red1;
+  padding-bottom: 60px;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 1.28;
+  letter-spacing: 4px;
+  text-align: center;
+  @include sp {
+    padding-bottom: 6vw;
+    font-size: 2rem;
+    line-height: 1.4;
+    letter-spacing: 2.8px;
+  }
+}
