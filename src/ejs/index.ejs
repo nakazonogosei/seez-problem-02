@@ -1,6 +1,8 @@
-<% const pageInfo = {
-  url: "/"
-};
+<%
+  const pageInfo = {
+    <!-- url: "/" -->
+    url: "/codingkadai/02/nakazono/"
+  };
 -%>
 <!DOCTYPE html>
 <html lang="ja">
@@ -31,6 +33,6 @@
     </div>
 
   </main>
-  <script defer src="/assets/js/bundle.js"></script>
+  <script defer src="<%= pageInfo.url %>assets/js/bundle.js"></script>
 </body>
 </html>
