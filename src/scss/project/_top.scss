@@ -1,7 +1,7 @@
 @use "../global" as *;
 
 .p-birthday {
-  background-color: rgb(241, 241, 241);
+  background-color: #fff;
   height: 100%;
   min-height: 100vh;
   line-height: 1.2;
@@ -39,14 +39,14 @@
   &__step-title {
     font-size: 3rem;
     padding: 6px 0 10px;
-    color: #000;
+    color: #fff;
     text-align: center;
-    background-color: #d3fcff;
+    background-color: #000;
     span {
       display: block;
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-top: 4px;
-      color: gray;
+      color: rgb(180, 180, 180);
     }
   }
   &__button {
@@ -71,7 +71,7 @@
         height: 100%;
         border: 2px solid black;
         line-height: 74px;
-        transition: all .3s;
+        transition: transform .5s;
       }
       .default {
         background-color: #fff;
@@ -83,14 +83,14 @@
       .hovering {
         background-color: black;
         color: #fff;
-        transform: rotateX(90deg);
+        transform: rotateX(450deg);
         transform-origin: center center -38px;
       }
     }
     &:hover {
       opacity: 1;
       .default {
-        transform: rotateX(-90deg);
+        transform: rotateX(-450deg);
       }
       .hovering {
         transform: rotateX(0);
