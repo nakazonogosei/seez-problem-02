@@ -6,7 +6,7 @@
   min-height: 100vh;
   line-height: 1.2;
   &__inner {
-    max-width: 500px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 60px 50px;
   }
@@ -25,6 +25,7 @@
   }
   &__title {
     display: flex;
+    margin-top: 500px;
     font-size: 3rem;
     color: #000;
   }
@@ -102,5 +103,49 @@
     li + li {
       margin-top: 8px;
     }
+  }
+}
+
+.p-wikipedia {
+  margin-top: 60px;
+  &__input {
+    margin-top: 20px;
+    border: 1px solid #eee;
+  }
+  &__button {
+    margin-top: 20px;
+    border: 1px solid #eee;
+    color: #fff;
+    background-color: rgb(158, 0, 0);
+    line-height: 30px;
+    padding: 0 10px;
+  }
+  &__block {
+    display: flex;
+    margin-top: 60px;
+  }
+  &__block-title {
+    display: block;
+    margin-top: 50px;
+    font-size: 3rem;
+    text-align: center;
+  }
+  &__block-text {
+    display: block;
+    width: calc(100% - (300px + 40px));
+    // margin-top: 20px;
+    margin-right: 40px;
+    font-size: 2rem;
+  }
+  &__image {
+    width: 300px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 3rem;
+  }
+  &__sub-title {
+    margin-top: 10px;
+    font-size: 1.6rem;
   }
 }

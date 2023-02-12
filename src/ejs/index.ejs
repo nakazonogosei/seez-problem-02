@@ -1,7 +1,7 @@
 <%
   const pageInfo = {
-    <!-- url: "/" -->
-    url: "/codingkadai/02/nakazono/"
+    url: "/"
+    <!-- url: "/codingkadai/02/nakazono/" -->
   };
 -%>
 <!DOCTYPE html>
@@ -9,8 +9,16 @@
 <%- include('./include/_head', {meta:pageInfo}); -%>
 <body class="p-birthday">
   <main class="main">
-
+    
     <div class="p-birthday__inner">
+      <div class="p-wikipedia">
+        <h3 class="p-wikipedia__title">Wikipediaの記事検索</h3>
+        <p class="p-wikipedia__sub-title">あなたの尊敬する偉人を検索せよ！</p>
+        <input id="keyword" type="text" placeholder="例：インターネット" class="p-wikipedia__input">
+        <button id="btn" class="p-wikipedia__button">検索</button>
+        <div id="content"></div>
+      </div>
+
       <h1 class="p-birthday__title">
         <span class="p-birthday__tag">必見<span class="_upright">!!</span></span>
         <span class="p-birthday__title-container">その辺にいる人の<br>誕生日一覧</span>
@@ -31,6 +39,11 @@
         <ul id="birthday2" class="p-birthday__list"></ul>
       </section>
     </div>
+
+
+
+
+
 
   </main>
   <script defer src="<%= pageInfo.url %>assets/js/bundle.js"></script>
